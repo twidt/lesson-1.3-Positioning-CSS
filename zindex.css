@@ -1,0 +1,38 @@
+/* Z-Index will allow you to position elements on top of each other. The z-axis is in control of the depth of the positon */
+
+.box-set {
+    background: #eaeaed;
+    height: 160px;
+    position: relative;
+}
+
+.box {
+    background: #2db34a;
+    border: 2px solid #ff7b29;
+    position: absolute;
+}
+
+/* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box */
+
+.box-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.box-2 {
+    bottom: 10px;
+    left: 70px;
+    z-index: 3;
+}
+
+.box-3 {
+    left: 130px;
+    top: 10px;
+    z-index: 2;
+}
+
+.box-4 {
+    bottom: 10px;
+    left: 190px;
+    z-index: 1;
+}
